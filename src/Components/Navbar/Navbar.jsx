@@ -3,7 +3,9 @@ import cart from '../../assets/products/shopping-cart.png';
 
 const Navbar = ({cartItems}) => {
     return (
-        <div className='container mx-auto manrope-font border-b border-b-[#f3ecec]'>
+      <div className='border-b border-b-[#f3ecec] py-3'>
+
+        <div className='container mx-auto manrope-font '>
             <div className="navbar bg-base-100 ">
   <div className="navbar-start">
     <div className="dropdown">
@@ -39,6 +41,7 @@ const Navbar = ({cartItems}) => {
     <a className="btn btn-primary rounded-full">Get Started</a>
   </div>
 </div>
+          </div>
         </div>
     );
 };
