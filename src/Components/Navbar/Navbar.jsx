@@ -36,7 +36,7 @@ const Navbar = ({cartItems}) => {
     </ul>
   </div>
   <div className="navbar-end gap-1 md:gap-2">
-    <a className="btn btn-ghost -mr-4 md:mr-0 pointer-events-none"><img src={cart} alt="" /> {cartItems.length}</a>
+    <a className="btn btn-ghost sm:hidden md:mr-0 pointer-events-none"><img src={cart} alt="" /> {cartItems.length}</a>
     <a className="btn btn-ghost rounded-full">Login</a>
     <a className="btn btn-primary rounded-full">Get Started</a>
   </div>
