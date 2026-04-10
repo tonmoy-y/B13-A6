@@ -6,7 +6,7 @@ import PricingCard from './PricingCard';
 const Pricing = ({pricingPromise}) => {
     const pricing = use(pricingPromise);
     return (
-        <div className='container mx-auto manrope-font py-30'>
+        <div className='container mx-auto manrope-font py-30 px-4'>
             <div className='space-y-4'>
                 <h1 className='text-5xl text-center font-bold'>Simple, Transparent Pricing</h1>
                 <p className='text-secondary text-center'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
@@ -16,7 +16,8 @@ const Pricing = ({pricingPromise}) => {
 
             {
                 pricing.map(plan => (
-                    <PricingCard key={plan.id} plan={plan} />
+      
+                    <PricingCard key={plan.name} plan={plan} />
                 ))
             }
             </div>

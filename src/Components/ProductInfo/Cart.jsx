@@ -16,7 +16,7 @@ const Cart = ({cartItems, setCartItems}) => {
         toast.success('Checkout successful!');
     }
     return (
-        <div className='container mx-auto manrope-font'>
+        <div className='container mx-auto manrope-font px-4'>
             <div className='border border-[#f2f2f2] p-8 space-y-6'>
                 <h1 className='text-2xl font-bold'>Your Cart</h1>
 

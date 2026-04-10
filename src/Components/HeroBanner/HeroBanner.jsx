@@ -5,9 +5,9 @@ import Dot from  '../../assets/dot.png';
 
 const HeroBanner = () => {
     return (
-        <div className='container mx-auto my-20 manrope-font'>
+        <div className='container mx-auto my-20 manrope-font px-4'>
             <div className='flex flex-col lg:flex-row mx-auto justify-around gap-6'>
-                <div className=' space-y-2.5 flex flex-col items-start justify-center'>
+                <div className='mx-auto space-y-2.5 flex flex-col items-start justify-center'>
                     <div className='bg-[#E1E7FF] flex items-center gap-1 px-4 py-2 rounded-full'> <img src={Dot} alt="" className='h-4 w-4'/> <p className='text-primary font-medium'> New: AI-Powered Tools Available </p></div>
                     <h1 className='font-bold text-6xl/normal '>
                         Supercharge Your <br /> Digital Workflow
@@ -23,7 +23,7 @@ const HeroBanner = () => {
                         <button className='btn btn-ghost border-2 border-primary rounded-full text-primary flex items-center' > <img src={PlayImg} alt="" /> Watch Demo </button>
                     </div>
                 </div>
-                <div>
+                <div className='mx-auto'>
                     <img src={Banner} alt="" />
                 </div>
 

@@ -3,8 +3,8 @@ import cart from '../../assets/products/shopping-cart.png';
 
 const Navbar = ({cartItems}) => {
     return (
-        <div className='container mx-auto manrope-font'>
-            <div className="navbar bg-base-100 shadow-sm">
+        <div className='container mx-auto manrope-font border-b border-b-[#f3ecec]'>
+            <div className="navbar bg-base-100 ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -21,7 +21,7 @@ const Navbar = ({cartItems}) => {
       <li><a>FAQ</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-2xl font-bold text-[#9514FA]">DigiTools</a>
+    <a className="btn btn-ghost pointer-events-none md:pointer-events-auto text-2xl font-bold text-[#9514FA]">DigiTools</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 font-semibold">
@@ -33,9 +33,9 @@ const Navbar = ({cartItems}) => {
       <li><a>FAQ</a></li>
     </ul>
   </div>
-  <div className="navbar-end gap-2">
-    <a className="btn btn-ghost"><img src={cart} alt="" /> {cartItems.length}</a>
-    <a className="btn btn-ghost">Login</a>
+  <div className="navbar-end gap-1 md:gap-2">
+    <a className="btn btn-ghost -mr-4 md:mr-0 pointer-events-none"><img src={cart} alt="" /> {cartItems.length}</a>
+    <a className="btn btn-ghost rounded-full">Login</a>
     <a className="btn btn-primary rounded-full">Get Started</a>
   </div>
 </div>

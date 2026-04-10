@@ -40,7 +40,7 @@ const Products = ({product, cartItems, setCartItems}) => {
         {description}
     </p>
     <h1><span className='text-2xl font-bold'>${price}</span>/<span className='text-secondary'>{period}</span></h1>
-    <ul className='text-secondary'>
+    <ul className='text-secondary flex-1'>
         {features.map(feature => (
             <li key={feature}>
         <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
@@ -49,7 +49,7 @@ const Products = ({product, cartItems, setCartItems}) => {
         ))}
     </ul>
     {
-        selected ? <button onClick={() => buyNowHandler(product)} className='btn btn-primary w-full rounded-full' disabled>Buy Now</button> : <button onClick={() => buyNowHandler(product)} className='btn btn-primary w-full rounded-full'>Buy Now</button>
+        selected ? <button onClick={() => buyNowHandler(product)} className='btn btn-soft w-full rounded-full pointer-events-none' >Added to cart</button> : <button onClick={() => buyNowHandler(product)} className='btn btn-primary w-full rounded-full'>Buy Now</button>
     }
  </div>
         </div>

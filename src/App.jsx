@@ -35,13 +35,13 @@ function App() {
      <Navbar cartItems ={cartItems} setCartItems = {setCartItems}> </Navbar>
      <HeroBanner> </HeroBanner>
      <Info> </Info>
-  
-     <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
+    
+     <Suspense fallback={<div className='flex justify-center items-center'> <span className="loading loading-spinner loading-xl"></span> </div> }>
       <ProductInfo productsPromise = {productsPromise} cartItems = {cartItems} setCartItems = {setCartItems} ></ProductInfo>
      </Suspense>
      <ToastContainer> </ToastContainer>
      <GetStarted> </GetStarted>
-     <Suspense fallback={<span className="text-center loading loading-spinner loading-xl"></span>}>
+     <Suspense fallback={<div className='flex justify-center items-center'> <span className="loading loading-spinner loading-xl"></span> </div>}>
       <Pricing pricingPromise = {pricingPromise}> </Pricing>
      </Suspense>
      <Transform> </Transform>
