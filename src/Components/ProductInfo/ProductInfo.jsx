@@ -12,7 +12,7 @@ const ProductInfo = ({productsPromise ,cartItems, setCartItems}) => {
         <div className='flex flex-col items-center space-y-3.5 mb-10'>
             <h1 className='text-4xl font-bold text-center'>Premium Digital Tools</h1>
             <p className='text-secondary text-center'>Choose from our curated collection of premium digital products <br /> designed to boost your productivity and creativity.</p>
-            <div className='flex gap-3'>
+            <div className='flex border p-0.5 border-[#F6F6F6] rounded-full'>
                 <button onClick={() => setSelectedType('Products')} className={`btn ${selectedType === 'Products' ? 'bg-linear-to-r from-[#4F39F6] via-[#801FF9] to-[#9514FA] text-white' : 'btn-ghost text-primary'} rounded-full  font-bold`}> Products</button>
                 <button onClick={() => setSelectedType('Cart')} className={`btn ${selectedType === 'Cart' ? 'bg-linear-to-r from-[#4F39F6] via-[#801FF9] to-[#9514FA] text-white' : 'btn-ghost text-primary'} rounded-full  font-bold`}>Cart({cartItems.length})</button>
             </div>

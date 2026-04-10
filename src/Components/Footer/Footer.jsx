@@ -45,22 +45,22 @@ const Footer = () => {
 
                     <div className='space-y-4'>
                         <h2 className='text-xl font-medium leading-7'>Social Links</h2>
-                       <ul className='flex items-center gap-4'>
-  <li className=' p-2 rounded-full bg-[#ffffff] flex items-center justify-center'>
-    <a className='text-black'  href=""><TbBrandInstagramFilled size={28} /></a>
-  </li>
+                        <ul className='flex items-center gap-4'>
+                            <li className=' p-2 rounded-full bg-[#ffffff] flex items-center justify-center'>
+                                <a className='text-black' href=""><TbBrandInstagramFilled size={28} /></a>
+                            </li>
 
-  <li className=' p-3 rounded-full bg-white flex items-center justify-center'>
-    <a className='text-black'  href=""><FaFacebookSquare size={20} /></a>
-  </li>
+                            <li className=' p-3 rounded-full bg-white flex items-center justify-center'>
+                                <a className='text-black' href=""><FaFacebookSquare size={20} /></a>
+                            </li>
 
-  <li className=' p-3 rounded-full bg-white flex items-center justify-center'>
-    <a className='text-black' href=""><FaXTwitter size={20} /></a>
-  </li>
-</ul>
+                            <li className=' p-3 rounded-full bg-white flex items-center justify-center'>
+                                <a className='text-black' href=""><FaXTwitter size={20} /></a>
+                            </li>
+                        </ul>
                     </div>
 
-                    
+
                     <div></div>
                 </div>
             </div>
