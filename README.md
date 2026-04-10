@@ -15,3 +15,5 @@ It includes product browsing, a simple cart flow, and plan-based pricing section
 - See the products and add/remove items from cart with instant feedback.
 - Toggle between Cart and Products, with live cart count and total price.
 - View pricing plans with highlighted options and feature lists.
+
+ 
