@@ -10,7 +10,7 @@ const Footer = () => {
             <div className='py-20 container mx-auto manrope-font text-white'>
                 <div className='grid grid-cols-2 gap-y-7 md:grid-cols-3 lg:grid-cols-6'>
                     <div className='col-span-2 space-y-2.5 pr-10'>
-                        <h2 className='text-4xl font-bold'>Digitools</h2>
+                        <h2 className='text-4xl font-bold'>DigiTools</h2>
                         <p className='opacity-80 leading-7'>Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.</p>
                     </div>
                     <div className='space-y-4 '>
