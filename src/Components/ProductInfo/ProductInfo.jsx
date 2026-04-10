@@ -4,7 +4,7 @@ import Cart from './Cart';
 
 const ProductInfo = ({productsPromise ,cartItems, setCartItems}) => {
     const products = use(productsPromise);
-    console.log(products);
+
     const [selectedType, setSelectedType] = useState('Products'); 
     return (
         <div className='container manrope-font mx-auto'>
@@ -19,7 +19,7 @@ const ProductInfo = ({productsPromise ,cartItems, setCartItems}) => {
         </div>
         {
             selectedType === 'Products' ? 
-        <div className=' grid grid-cols-3 gap-5'>
+        <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
            { products.map(product => (
             <Products key={product.id} product={product} cartItems={cartItems} setCartItems={setCartItems} ></Products>
            ))}

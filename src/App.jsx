@@ -6,6 +6,9 @@ import Navbar from './Components/Navbar/Navbar'
 import ProductInfo from './Components/ProductInfo/ProductInfo'
 import { ToastContainer } from 'react-toastify'
 import GetStarted from './Components/GetStarted/GetStarted'
+import Pricing from './Components/Pricing/Pricing'
+import Transform from './Components/Transform/Transform'
+import Footer from './Components/Footer/Footer'
 
 const fetchProducts = async () => {
   const res = await fetch('/product.json');
@@ -14,9 +17,16 @@ const fetchProducts = async () => {
 
 }
 
+const fetchPricing = async () => {
+  const res = await fetch('/pricing.json');
+
+  return res.json();
+}
+
 function App() {
   const [cartItems, setCartItems] = useState([]);
   const productsPromise = fetchProducts();
+  const pricingPromise = fetchPricing();
 
 // console.log(productsPromise);
 
@@ -31,7 +41,11 @@ function App() {
      </Suspense>
      <ToastContainer> </ToastContainer>
      <GetStarted> </GetStarted>
-     
+     <Suspense fallback={<span className="text-center loading loading-spinner loading-xl"></span>}>
+      <Pricing pricingPromise = {pricingPromise}> </Pricing>
+     </Suspense>
+     <Transform> </Transform>
+     <Footer></Footer>
     </>
   )
 }
