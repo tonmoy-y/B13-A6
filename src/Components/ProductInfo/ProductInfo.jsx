@@ -9,7 +9,7 @@ const ProductInfo = ({productsPromise ,cartItems, setCartItems}) => {
     return (
         <div className='container manrope-font mx-auto px-4'>
             <div className='py-40 '>
-        <div className='flex flex-col items-center space-y-3.5 mb-4'>
+        <div className='flex flex-col items-center space-y-3.5 mb-10'>
             <h1 className='text-4xl font-bold text-center'>Premium Digital Tools</h1>
             <p className='text-secondary text-center'>Choose from our curated collection of premium digital products <br /> designed to boost your productivity and creativity.</p>
             <div className='flex gap-3'>
