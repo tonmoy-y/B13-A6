@@ -21,6 +21,7 @@ const Navbar = ({cartItems}) => {
       <li><a>Testimonials</a></li>
      
       <li><a>FAQ</a></li>
+      <li><a className="btn btn-ghost pointer-events-none"><img src={cart} alt="" /> {cartItems.length}</a></li>
       </ul>
     </div>
     <a className="btn btn-ghost pointer-events-none md:pointer-events-auto text-2xl font-bold text-[#9514FA]">DigiTools</a>
