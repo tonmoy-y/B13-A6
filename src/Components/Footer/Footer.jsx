@@ -67,9 +67,9 @@ const Footer = () => {
             <div className='py-6 flex justify-between text-[#FAFAFA]/80'>
             <div><p>© 2026 Digitools. All rights reserved.</p></div>
             <div className='flex gap-2 md:gap-10'>
-                <div><a> Privacy Policy</a> </div>
-            <div> <a> Terms of Service</a> </div>
-            <div><a>Cookies</a> </div>
+                <div><a href=''> Privacy Policy</a> </div>
+            <div> <a href=''> Terms of Service</a> </div>
+            <div><a href=''>Cookies</a> </div>
             </div>
             </div>
         </div>
